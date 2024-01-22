@@ -1,0 +1,28 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[4.10,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "lazydog"
+version = "${version}"
+displayName = "Lazy Dog"
+authors = "forpleuvoir"
+description = '''
+懒狗mod
+'''
+#logoFile = ""
+
+[[dependencies.lazydog]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.lazydog]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"

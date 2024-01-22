@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "lazydog",
+  "version": "${version}",
+  "name": "Lazy Dog",
+  "description": "懒狗mod",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/examplemod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "moe.forpleuvoir.lazydog.fabric.LazyDogFabric"
+      }
+    ]
+  },
+  "mixins": [
+    "lazydog.mixins.json",
+    "lazydog-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20.1"
+  }
+}

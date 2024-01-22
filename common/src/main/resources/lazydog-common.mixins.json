@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "moe.forpleuvoir.lazydog.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "client.MixinItemEntityRenderer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
