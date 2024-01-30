@@ -11,3 +11,7 @@ accessible field net/minecraft/text/TranslatableTextContent languageCache Lnet/m
 accessible field net/minecraft/text/TranslatableTextContent translations Ljava/util/List;
 accessible field net/minecraft/server/MinecraftServer session Lnet/minecraft/world/level/storage/LevelStorage$Session;
 accessible field net/minecraft/world/level/storage/LevelStorage$Session directory Lnet/minecraft/world/level/storage/LevelStorage$LevelSave;
+mutable field net/minecraft/block/entity/BeaconBlockEntity EFFECTS_BY_LEVEL [[Lnet/minecraft/entity/effect/StatusEffect;
+mutable field net/minecraft/block/entity/BeaconBlockEntity EFFECTS Ljava/util/Set;
+accessible field net/minecraft/block/entity/BeaconBlockEntity EFFECTS Ljava/util/Set;
+accessible method net/minecraft/entity/effect/StatusEffects register (ILjava/lang/String;Lnet/minecraft/entity/effect/StatusEffect;)Lnet/minecraft/entity/effect/StatusEffect;

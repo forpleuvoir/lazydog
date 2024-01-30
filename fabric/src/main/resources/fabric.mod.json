@@ -20,6 +20,12 @@
         "adapter": "kotlin",
         "value": "moe.forpleuvoir.lazydog.fabric.LazyDogFabric"
       }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "moe.forpleuvoir.lazydog.fabric.LazyDogFabric"
+      }
     ]
   },
   "mixins": [
