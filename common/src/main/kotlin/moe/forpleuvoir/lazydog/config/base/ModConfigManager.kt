@@ -33,6 +33,7 @@ abstract class ModConfigManager<T>(protected val modID: String, key: String) : C
                 forceSave()
                 log.error(it)
             }
+            if(needSave) save()
         }
     }
 

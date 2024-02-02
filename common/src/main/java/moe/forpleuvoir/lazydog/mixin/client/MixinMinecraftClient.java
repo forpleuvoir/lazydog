@@ -11,12 +11,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MixinMinecraftClient {
 
     @Inject(method = "tick", at = @At("HEAD"))
-    public void startTick(CallbackInfo ci) {
+    public void lazyDog$startTick(CallbackInfo ci) {
         TickTaskScheduler.Client.INSTANCE.startTick((MinecraftClient) (Object) this);
     }
 
     @Inject(method = "tick", at = @At("RETURN"))
-    public void endTick(CallbackInfo ci) {
+    public void lazyDog$endTick(CallbackInfo ci) {
         TickTaskScheduler.Client.INSTANCE.endTick((MinecraftClient) (Object) this);
     }
 

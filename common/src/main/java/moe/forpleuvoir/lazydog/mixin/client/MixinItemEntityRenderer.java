@@ -21,7 +21,7 @@ public abstract class MixinItemEntityRenderer extends EntityRenderer<ItemEntity>
     }
 
     @Inject(method = "render*", at = @At("RETURN"))
-    public void render(ItemEntity itemEntity, float yaw, float tickDelta, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int light, CallbackInfo callbackInfo) {
+    public void lazyDog$render(ItemEntity itemEntity, float yaw, float tickDelta, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int light, CallbackInfo callbackInfo) {
         ItemEntityRender.render(itemEntity, yaw, tickDelta, matrixStack, vertexConsumerProvider, light, this.getTextRenderer(), this.dispatcher);
 
     }

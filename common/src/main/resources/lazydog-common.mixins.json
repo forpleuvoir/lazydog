@@ -8,6 +8,9 @@
   ],
   "mixins": [
     "MixinBeaconBlockEntity",
+    "MixinBucketItem",
+    "MixinEnchantment",
+    "MixinEnchantmentHelper",
     "MixinMinecraftServer",
     "client.MixinItemEntityRenderer"
   ],
