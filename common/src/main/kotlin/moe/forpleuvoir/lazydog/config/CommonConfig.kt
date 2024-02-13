@@ -20,7 +20,7 @@ object CommonConfig : CommonConfigManager(LazyDogExpectPlatform.getLazyDog().id,
         val beaconLevelRange by ConfigInt("beacon_level_range", 20)
 
         @Description("无限附魔的桶")
-        val infinityBucketList by ConfigStringList("infinity_bucket_list", listOf("minecraft:water_bucket"))
+        val infinityBucketList by ConfigStringList("infinity_bucket_list", listOf("minecraft:water_bucket","minecraft:bucket"))
 
     }
 

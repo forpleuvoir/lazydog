@@ -17,6 +17,11 @@ object InfinityEnchantmentModifier {
     }
 
     @JvmStatic
+    fun isInfinityBucket(stack: ItemStack): Boolean {
+        return EnchantmentHelper.getLevel(Enchantments.INFINITY, stack) > 0
+    }
+
+    @JvmStatic
     fun getEmptiedStack(stack: ItemStack, player: PlayerEntity): ItemStack {
         val hasInfinityEnchantment = EnchantmentHelper.getLevel(Enchantments.INFINITY, stack) > 0
         return if (player.abilities.creativeMode || hasInfinityEnchantment) stack else ItemStack(Items.BUCKET)
